@@ -1,11 +1,12 @@
 let curves;
-let rad = 8;
-let spd = 0.05;
+let rad = 10;
+let spd = 0.09;
 
 function setup() {
    createCanvas(windowWidth, windowHeight);
    background(0);
    stroke(255);
+   strokeWeight(4); 
    curves = [];
    noFill();
 }
@@ -30,7 +31,7 @@ function mouseDragged() {
 }
 
 function draw() {
-   background(0, 100);
+   background(0, 2);
 
    if (curves.length >= 1 && !mouseIsPressed) {
 
